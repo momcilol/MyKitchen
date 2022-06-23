@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/am_left_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/am_right_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"></FrameLayout>
+
+</LinearLayout>

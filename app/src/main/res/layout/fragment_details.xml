@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.DetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Scrollconstraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recipe_desc_image"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/desc_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/desc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recipe_desc_image" />
+
+            <ImageView
+                android:id="@+id/rating_pic"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_title"
+                app:srcCompat="@drawable/cooking" />
+
+            <TextView
+                android:id="@+id/rating_text"
+                android:layout_width="116dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rating_pic"
+                app:layout_constraintStart_toEndOf="@+id/rating_pic"
+                app:layout_constraintTop_toTopOf="@+id/rating_pic" />
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rating_pic"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/choose_recipecard"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Recipe Card"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/summary" />
+
+            <Button
+                android:id="@+id/visit_source"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Visit source"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/summary" />
+
+            <ImageButton
+                android:id="@+id/favourites_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="120dp"
+                android:background="#00FFFFFF"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/icon_star_border"
+                app:layout_constraintBottom_toBottomOf="@+id/rating_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rating_text"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

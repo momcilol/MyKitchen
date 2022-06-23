@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlns="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/app_bar_search_recipes_0"
+        android:title="Search recipes" />
+    <item
+        android:id="@+id/app_bar_favourites_1"
+        android:title="Favourites" />
+    <item
+        android:id="@+id/app_bar_map_2"
+        android:title="Map" />
+    <item
+        android:id="@+id/app_bar_settings_3"
+        android:title="Settings"
+        mlns:showAsAction="never" />
+    <item
+        android:id="@+id/app_bar_search_4"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        mlns:actionViewClass="android.widget.SearchView"
+        mlns:showAsAction="ifRoom" />
+</menu>
